@@ -1,0 +1,8 @@
+To build tool, please go to the Incremental_Solver directory and follow the instruction in the README of that directory
+
+================================================================================
+DIRECTORY OVERVIEW:
+
+bench/			ISCAS benchmarks and sample camouflaged circuits
+Incremental_Solver/ 	root directory 
+Oracle/			sample Oracle 

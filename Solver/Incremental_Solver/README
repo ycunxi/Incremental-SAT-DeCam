@@ -1,0 +1,40 @@
+SOLVER is a SAT-based Incremental Solver, it takes <Cam.v> and <Orac.sh> as inputs. 
+During each iteration, Solver will generate 'PI.txt' as outfile, and read in 'PO.txt'.
+For detailed information please visit:
+
+================================================================================
+DIRECTORY OVERVIEW:
+
+mtl/            Template Library (from MINISAT)
+utils/          Generic helper code (I/O, Parsing, CPU-time, etc)(from MINISAT)
+core/           A core part of the solver(from MINISAT)
+incre/			Solver's headfile and implementation
+simp/           Main folder
+doc/			tutorial 	
+================================================================================
+BUILDING: (release version: without assertions, statically linked, etc)
+
+Note: the minimum requirement for complier is "g++ 4.9".
+
+export MROOT=<solver-dir>              
+cd simp
+make rs
+cp SOLVER_static <install-dir>/SOLVER
+
+Note: Please execute “make clean” first
+================================================================================
+USAGE:
+
+./SOLVER [options] <Cam.v> <Orac.sh>
+
+<Cam.v>       		camouflaged netlist to be solved
+<Orac.sh>     		shell script to query Oracle
+-d, --debug   		change to debug mode, solver will generate log messages and log files
+-o, --outfile 		export solution to this file
+
+Note: During the solving, solver will generate 'PI.txt' file and read 'PO.txt' file. For stability sake, the filename can not be changed. So please make sure your Oracle will read 'PI.txt' and export 'PO.txt' in working directory. Sample PO.txt is in 
+folder Oracle. The first line is the PO net names separated by space, the second line is corresponding value separated by space. PI.txt is of the same format.
+
+
+Example:
+./SOLVER -d c7552-mux4-21.v test.sh 

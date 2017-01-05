@@ -1,0 +1,9 @@
+0	normal exit
+3	Verilog format is not acceptable
+4	no arguments provided
+5	illegae arguments
+6 	no Cam.v or Orac.h provided
+7	Camouflage Circuit is not existed or read prohibited
+8	Shell file is not existed or read prohibited
+
+
