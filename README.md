@@ -2,7 +2,7 @@
 
 Link to paper: https://ieeexplore.ieee.org/document/7814148/
 
-[![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/ycunxi/FLowGen-CNNs-DAC18/blob/master/LICENSE.md)
+[![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/ycunxi/Incremental-SAT-DeCam/blob/master/LICENSE.md)
 
 ## Requirements
 
