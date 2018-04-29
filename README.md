@@ -6,7 +6,7 @@ Link to paper: https://ieeexplore.ieee.org/document/7814148/
 
 ## Requirements
 
-- > g++4.9
+- g++4.9 or above (g++7 tested)
 - Build on top of miniSAT (see http://minisat.se)
 - [Tested env] Ubuntu 16.04, CentOS 6
 
